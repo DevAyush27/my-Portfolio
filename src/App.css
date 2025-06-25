@@ -36,3 +36,12 @@
     transform: rotate(360deg);
   }
 }
+
+/* ⭐ Added for your project cards */
+.project-card {
+  background-color: transparent; /* remove white box */
+  border: none;                 /* remove border */
+  box-shadow: none;             /* remove shadow */
+  padding: 1rem;                /* optional: padding inside card */
+  border-radius: 0.5rem;        /* optional: soft corners */
+}
