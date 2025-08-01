@@ -1,43 +1,50 @@
-# React Portfolio Page 🚀
+# 🚀 React Portfolio Page
 
 ## 📌 Overview:
 
 This is a responsive **React-based Portfolio Web App** developed as part of an internship assignment.  
 It showcases multiple projects with **category filters**, **modal previews**, and **live project links** (where available).
 
-The page helps demonstrate my **front-end React skills**, **Bootstrap integration**, and **UI/UX understanding**.
+The project highlights my **React.js skills**, **Bootstrap integration**, and **UI/UX understanding**.
 
 ---
 
 ## ✅ Features:
 
-- 🖥️ Grid display of 6+ projects
-- 🎨 Category filters:
+- 🖥️ Grid display of 6+ projects (Web, ML, Logo categories)
+- 🎨 Category Filters:
   - All
   - Web
   - App
   - Logo
-  - Marketing
-- 🔍 Clickable project cards with Modal preview (shows project image, description, and live link)
-- 🌐 Live preview links for hosted projects
-- 🛠️ Fully responsive (Mobile + Tablet + Desktop)
+- 🔍 Clickable project cards with **Modal Preview** (showing project image, description, and live preview link if available)
+- 🌐 Live Preview links for hosted projects
+- 📱 Fully responsive (Mobile + Tablet + Desktop)
+- 🎨 Clean, modern and user-friendly UI
 
 ---
 
 ## 🛠️ Technologies Used:
 
-- React JS
+- React JS (Create React App)
 - Bootstrap 5
-- React-Bootstrap (For Modal)
+- React-Bootstrap (Modal)
 - HTML & CSS
 - JavaScript (ES6)
+- Netlify (for deployment)
+- Git & GitHub (Version control)
 
 ---
 
 ## 🚀 Live Demo Link:
 
-👉 [https://your-netlify-deployment-link.netlify.app](https://your-netlify-deployment-link.netlify.app)  
-*(Replace this with your actual Netlify deployment link after deployment)*
+👉 [https://zingy-elf-d9b6e2.netlify.app/](https://zingy-elf-d9b6e2.netlify.app/)
+
+---
+
+## ✅ GitHub Repository Link:
+
+👉 [https://github.com/DevAyush27/my-Portfolio](https://github.com/DevAyush27/my-Portfolio)
 
 ---
 
@@ -45,7 +52,16 @@ The page helps demonstrate my **front-end React skills**, **Bootstrap integratio
 
 Follow these steps:
 
-1. **Clone the repository:**
+### 1. Clone the Repository:
 
 ```bash
-git clone https://github.com/YourGitHubUsername/your-repo-name.git
+git clone https://github.com/DevAyush27/my-Portfolio.git
+cd my-Portfolio
+
+**Install Dependencies:
+--npm install
+
+**Start the Development Server:
+--npm start
+
+

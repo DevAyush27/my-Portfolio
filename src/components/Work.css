@@ -1,0 +1,147 @@
+.work {
+  padding: 100px 0;
+  background: #f9f9f9;
+}
+
+.section-header {
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+.section-title {
+  font-size: 48px;
+  font-weight: 700;
+  color: #2d3748;
+}
+
+.section-description {
+  font-size: 18px;
+  color: #718096;
+  max-width: 600px;
+  margin: 0 auto;
+  line-height: 1.6;
+}
+
+.filter-tabs {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 60px;
+}
+
+.filter-tab {
+  background: transparent;
+  border: 2px solid #667eea;
+  border-radius: 25px;
+  padding: 8px 20px;
+  cursor: pointer;
+  font-size: 14px;
+  color: #667eea;
+  margin: 0 10px;
+  transition: all 0.3s ease;
+}
+
+.filter-tab.active,
+.filter-tab:hover {
+  background: #667eea;
+  color: white;
+  text-decoration: none;
+}
+
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 40px;
+}
+
+.project-card {
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+  transition: all 0.3s ease;
+  cursor: pointer;
+  position: relative;
+}
+
+.project-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 15px 30px rgba(0,0,0,0.15);
+}
+
+.project-image {
+  position: relative;
+}
+
+.project-image img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.project-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0,0,0,0.6);
+  color: white;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 20px;
+}
+
+.project-card:hover .project-overlay {
+  opacity: 1;
+}
+
+.project-info h3 {
+  font-size: 24px;
+  margin-bottom: 5px;
+}
+
+.project-info p {
+  font-size: 14px;
+  margin: 0 0 15px 0;
+}
+
+.project-tech {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+}
+
+.tech-tag {
+  background: rgba(255, 255, 255, 0.2);
+  padding: 5px 10px;
+  border-radius: 3px;
+  font-size: 12px;
+}
+
+.project-actions {
+  margin-top: 15px;
+}
+
+.view-btn {
+  background: transparent;
+  border: none;
+  color: white;
+  font-size: 18px;
+  cursor: pointer;
+}
+
+.view-btn:hover {
+  color: #667eea;
+}
+
+@media (max-width: 768px) {
+  .filter-tab {
+    margin: 5px;
+  }
+}
+

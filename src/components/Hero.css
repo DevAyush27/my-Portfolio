@@ -1,0 +1,285 @@
+.hero {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+  padding-top: 80px;
+  position: relative;
+}
+
+.hero-content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 80px;
+  align-items: center;
+  width: 100%;
+}
+
+.hero-text {
+  animation-delay: 0.2s;
+}
+
+.greeting {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  margin-bottom: 30px;
+}
+
+.wave {
+  font-size: 60px;
+  animation: wave 2s infinite;
+}
+
+@keyframes wave {
+  0%, 100% { transform: rotate(0deg); }
+  25% { transform: rotate(20deg); }
+  75% { transform: rotate(-10deg); }
+}
+
+.hero-title {
+  font-size: 64px;
+  font-weight: 700;
+  color: #2d3748;
+  margin: 0;
+  line-height: 1.2;
+}
+
+.name-highlight {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.hero-description {
+  margin: 40px 0;
+}
+
+.subtitle,
+.bio,
+.collaboration {
+  font-size: 16px;
+  line-height: 1.8;
+  color: #718096;
+  margin-bottom: 20px;
+  font-weight: 400;
+  letter-spacing: 0.5px;
+}
+
+.social-links {
+  display: flex;
+  gap: 20px;
+  margin-top: 40px;
+}
+
+.social-link {
+  width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: white;
+  border-radius: 12px;
+  color: #666;
+  text-decoration: none;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  transition: all 0.3s ease;
+}
+
+.social-link:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+  color: #667eea;
+  text-decoration: none;
+}
+
+.hero-image {
+  display: flex;
+  justify-content: center;
+  animation-delay: 0.4s;
+  position: relative;
+}
+
+.profile-container {
+  position: relative;
+}
+
+.profile-image {
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  overflow: hidden;
+  border: 8px solid white;
+  box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+  position: relative;
+  z-index: 2;
+}
+
+.profile-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.tech-icons {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 1;
+}
+
+.tech-icon {
+  position: absolute;
+  width: 80px;
+  height: 80px;
+  background: white;
+  border-radius: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+  transition: all 0.3s ease;
+  animation: float 3s ease-in-out infinite;
+}
+
+.tech-icon:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 30px rgba(0,0,0,0.15);
+}
+
+.tech-icon i {
+  font-size: 24px;
+  margin-bottom: 5px;
+}
+
+.tech-icon span {
+  font-size: 10px;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.tech-icon.java {
+  top: 20px;
+  right: -20px;
+  animation-delay: 0s;
+}
+
+.tech-icon.java i {
+  color: #ed8b00;
+}
+
+.tech-icon.react {
+  top: 50%;
+  right: -40px;
+  transform: translateY(-50%);
+  animation-delay: 1s;
+}
+
+.tech-icon.react i {
+  color: #61dafb;
+}
+
+.tech-icon.node {
+  bottom: 20px;
+  right: -20px;
+  animation-delay: 2s;
+}
+
+.tech-icon.node i {
+  color: #68a063;
+}
+
+.tech-icon.python {
+  top: 50%;
+  left: -40px;
+  transform: translateY(-50%);
+  animation-delay: 3s;
+}
+
+.tech-icon.python i {
+  color: #3776ab;
+}
+
+.tech-icon.mongodb {
+  bottom: 50px;
+  left: -20px;
+  animation-delay: 4s;
+}
+
+.tech-icon.mongodb i {
+  color: #47a248;
+}
+
+@keyframes float {
+  0%, 100% { transform: translateY(0px); }
+  50% { transform: translateY(-10px); }
+}
+
+.scroll-indicator {
+  position: absolute;
+  bottom: 40px;
+  right: 50%;
+  transform: translateX(50%);
+}
+
+.scroll-dots {
+  display: flex;
+  gap: 10px;
+}
+
+.dot {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background: rgba(0,0,0,0.2);
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.dot.active {
+  background: #667eea;
+  transform: scale(1.2);
+}
+
+.dot:hover {
+  background: #667eea;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .hero-content {
+    grid-template-columns: 1fr;
+    gap: 40px;
+    text-align: center;
+  }
+
+  .hero-title {
+    font-size: 48px;
+  }
+
+  .wave {
+    font-size: 40px;
+  }
+
+  .profile-image {
+    width: 250px;
+    height: 250px;
+  }
+
+  .tech-icon {
+    width: 60px;
+    height: 60px;
+  }
+
+  .tech-icon i {
+    font-size: 18px;
+  }
+
+  .tech-icon span {
+    font-size: 8px;
+  }
+}
