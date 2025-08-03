@@ -48,6 +48,12 @@ The project highlights my **React.js skills**, **Bootstrap integration**, and **
 
 ---
 
+## 💻 LeetCode Profile:
+
+👉 [https://leetcode.com/u/itsayush045/](https://leetcode.com/u/itsayush045/)
+
+---
+
 ## 📂 How to Run Locally:
 
 Follow these steps:
