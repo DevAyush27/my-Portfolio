@@ -84,7 +84,7 @@ const Contact = () => {
               <a href="https://codilo.com/ayush-profile" target="_blank" rel="noopener noreferrer">
                 <i className="fas fa-code"></i>
               </a>
-              <a href="https://leetcode.com/ayushgupta279" target="_blank" rel="noopener noreferrer">
+              <a href="https://leetcode.com/u/itsayush045/" target="_blank" rel="noopener noreferrer">
                 <i className="fas fa-laptop-code"></i>
               </a>
             </div>
